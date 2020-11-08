@@ -50,13 +50,14 @@ header nav ul li a {
     margin: 0 30px;
     font-size; 20px;
     font-style: italic;
+    text-decoration: underline;
 }
 /* end header style */
 
 /* add style to the hero */
 .hero {
     background-image: url("../images/hero.png");
-    height: 200px;
+    height: 250px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -66,7 +67,8 @@ header nav ul li a {
     font-size: 40px;
     font-weight: bold;
     font-style: italic;
-    color: var(--secondary-color);
+    color: #9375a0;
+    background-color: var(--primary-color);
     padding: 20px;
     position: absolute;
     bottom: 0px;
@@ -94,6 +96,7 @@ header nav ul li a {
     font-size: 18px;
     margin: 0 auto;
 }
+
 /* end "about-me" style */
 
 /* add style to "my work" section */
@@ -112,4 +115,34 @@ header nav ul li a {
 .work img {
     width: 35%;
     float: auto
+}
+/* end "my work" style */
+
+/* add style to "contact me" section */
+.contact-info {
+    word-spacing: 100px;
+    text-align: center
+}
+.contact-info a:link {
+    color: var(--primary-color);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.contact-info a:visited {
+    color: var(--primary-color);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.contact-info a:hover {
+    color: var(--tertiary-color);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.contact-info a:active {
+    color: var(--secondary-color);
+    background-color: transparent;
+    text-decoration: underline;
 }
