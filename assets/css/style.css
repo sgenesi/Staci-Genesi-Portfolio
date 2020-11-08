@@ -74,15 +74,17 @@ header nav ul li a {
 }
 /* end hero style */
 
+.section-title {
+    font-size: 30px;
+    color: var(--primary-color);
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+}
+
 /* add styles to the "about-me" section */
 .intro {
     text-align: justify;
-}
-
-.intro h2 {
-    font-size: 30px;
-    color: var(--primary-color);
-    display: inline-block;
 }
 
 .intro p {
@@ -91,4 +93,23 @@ header nav ul li a {
     width: 80%;
     font-size: 18px;
     margin: 0 auto;
+}
+/* end "about-me" style */
+
+/* add style to "my work" section */
+
+.work {
+    text-align: justify;
+}
+
+.samples {
+    width: 900px;
+    margin: 0 auto 30px auto;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.work img {
+    width: 35%;
+    float: auto
 }
