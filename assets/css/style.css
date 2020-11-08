@@ -1,0 +1,53 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* set up variables */
+:root {
+    --slate: #88918e;
+    --whitesmoke: #f3eff3;
+    --mistyrose: #fae6e6;
+}
+
+body {
+    color; var(--slate); 
+    font-family: helvetica, Arial, Helvetica, sans-serif;
+    background-color: var(--whitesmoke);
+}
+
+/* apply styles to header */
+header {
+    padding: 20px 35px;
+    background-color: var(--mistyrose);
+}
+
+header h1 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+    color: var(--slate);
+    margin: 0;
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--slate);
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-size; 20px;
+    font-style: italic;
+}
