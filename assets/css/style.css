@@ -6,15 +6,15 @@
 
 /* set up variables */
 :root {
-    --primary-color: #1a1b1b;
-    --secondary-color: #f3eff3;
-    --tertiary-color: #fae6e6;
+    --primary-color: #3c4353;
+    --secondary-color: #5967a6;
+    --tertiary-color: #d5abb9;
 }
 
 body {
     color; var(--primary-color); 
     font-family: helvetica, Arial, Helvetica, sans-serif;
-    background-color: var(--secondary-color);
+    background-color: #f3eff3;
 }
 
 /* apply styles to header */
@@ -55,7 +55,7 @@ header nav ul li a {
 
 /* add style to the hero */
 .hero {
-    background-image: url("../images/hero.jpg");
+    background-image: url("../images/hero.png");
     height: 200px;
     background-size: cover;
     background-position: center;
@@ -63,11 +63,32 @@ header nav ul li a {
 }
 
 .hero h3{
-    font-size: 35px;
-    color: #88918e;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--secondary-color);
     padding: 20px;
     position: absolute;
     bottom: 0px;
     right: 0px;
 }
 /* end hero style */
+
+/* add styles to the "about-me" section */
+.intro {
+    text-align: justify;
+}
+
+.intro h2 {
+    font-size: 30px;
+    color: var(--primary-color);
+    display: inline-block;
+}
+
+.intro p {
+    line-height: 1.2;
+    color: var(--primary-color);
+    width: 80%;
+    font-size: 18px;
+    margin: 0 auto;
+}
