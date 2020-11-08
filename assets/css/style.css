@@ -12,7 +12,7 @@
 }
 
 body {
-    color; var(--primary-color); 
+    color: var(--primary-color); 
     font-family: helvetica, Arial, Helvetica, sans-serif;
     background-color: #f3eff3;
 }
@@ -21,6 +21,9 @@ body {
 header {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -57,17 +60,19 @@ header nav ul li {
 
 header nav ul li a {
     margin: 0 30px;
+    font-size: 1.55vw;
     font-style: italic;
     text-decoration: underline;
-    font-size: 1.55vw;
 }
 /* end header style */
 
 /* add style to the hero */
 .hero {
     background-image: url("../images/hero.png");
+    height: 250px;
     background-size: cover;
     background-position: center;
+    position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -92,6 +97,7 @@ header nav ul li a {
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     display: inline-block;
+    position: fixed;
 }
 
 /* add styles to the "about-me" section */
@@ -105,36 +111,45 @@ header nav ul li a {
     color: var(--primary-color);
     width: 80%;
     font-size: 18px;
-    margin: 0 auto;
-    width: 700px;
-    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-left: 300px;
 }
-
 /* end "about-me" style */
 
 /* add style to "my work" section */
 
-.work {
+.sample {
     text-align: justify;
+    vertical-align: center;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: var(--primary-color)
+    text-decoration: none;
 }
 
-.samples {
-    width: 900px;
-    margin: 0 auto 30px auto;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-}
-
-.work img {
-    width: 35%;
-    float: auto
+.work-sample {
+    width: 300px;
+    color: var(--primary-color)
+    background-color: var(--secondary-color)
+    padding: 50px;
+    margin: 20px;
 }
 /* end "my work" style */
 
 /* add style to "contact me" section */
+.contact {
+    text-align: justify;
+    vertical-align: center;
+}
+
 .contact-info {
     display: flex;
-    justify-content: space-around;
+    text-align: justify;
+    vertical-align: center;
 }
 .contact-info a:link {
     color: var(--primary-color);
