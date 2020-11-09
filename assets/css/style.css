@@ -4,17 +4,35 @@
     padding: 0;
 }
 
+/* add styles to body */
+body {
+    color: var(--primary-color); 
+    font-family: helvetica, Arial, Helvetica, sans-serif;
+    background-color: #f3eff3;
+}
+
+.vl {
+    border-left: 6px solid var(--primary-color);
+    height: 225px;
+    margin-top: 10px;
+}
+
+.vl2 {
+    border-left: 6px solid var(--primary-color);
+    height: 600px;
+    margin-bottom: 10px;
+}
+
+.vl3 {
+    border-left: 6px solid var(--primary-color);
+    height: 150px;
+}
+
 /* set up variables */
 :root {
     --primary-color: #3c4353;
     --secondary-color: #5967a6;
     --tertiary-color: #d5abb9;
-}
-
-body {
-    color: var(--primary-color); 
-    font-family: helvetica, Arial, Helvetica, sans-serif;
-    background-color: #f3eff3;
 }
 
 /* apply styles to header */
@@ -27,6 +45,9 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
@@ -90,12 +111,10 @@ header nav ul li a {
     right: 0px;
 }
 /* end hero style */
-
 .section-title {
     font-size: 30px;
     color: var(--primary-color);
 }
-
 
 /* add styles to the "about-me" section */
 .intro {
@@ -103,15 +122,9 @@ header nav ul li a {
 }
 
 .intro div h2 {
-    text-align: right;
-}
-
-.intro-wrapper {
-    border-left: 3px solid;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 50px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-right: 35px;
 }
 
 .intro p {
@@ -126,34 +139,60 @@ header nav ul li a {
 /* add style to "my work" section */
 .work {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .work div h2 {
-    text-align: right;
+    text-align: justify;
+    margin-right: 48px;
 }
 
-.work-wrapper {
-    border-left: 3px solid;
+.box {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-}
-
-/* add style to grid */
-.work-grid-container {
-    max-width: 940px;
+    align-content: space-around;
+    width: 1000px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 100px);
-    grid-gap: 10px;
 }
 
-.work-grid-item {
-    background-color: var(--secondary-color);
-    border: solid;
-    padding: 1em;
+.flex-child {
+    width: 320px;
+    height: 280px;
+    margin: 6px;
+    position: relative;
+}
+
+.flex-child h3 h4 {
+    position: absolute;
+    display: block;
+    left: 10px;
+    bottom: 0;
     color: var(--primary-color);
+}
+
+.flex1 {
+    background-image: url("../images/run-buddy.png");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--secondary-color);
+    color: var(--primary-color);
+    resize: both;
+    overflow: scroll;
+}
+
+.flex2, .flex3, .flex4, .flex5, .flex6 {
+    background-image: url("../images/placeholder.png");
+    background-size: cover;
+    width: 225px;
+    height: 225px;
+    border: 2px solid var(--secondary-color);
+    color: var(--primary-color);
+    resize: both;
+    overflow: scroll;
 }
 /* end "my work" style */
 
@@ -170,51 +209,12 @@ header nav ul li a {
 }
 
 .contact div h2 {
-    text-align: right;
+    text-align: justify;
+    margin-right: 10px;
 }
  
 .box {
     display: flex;
     justify-content: space-between;
-}
-
-.one {
-    flex: 1;
-}
-
-.two {
-    flex: 1;
-}
-
-.three {
-    flex: 1;
-}
-
-.four {
-    flex: 1;
-}
-
-.contact-info a:link {
-    color: var(--primary-color);
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-.contact-info a:visited {
-    color: var(--primary-color);
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-.contact-info a:hover {
-    color: var(--tertiary-color);
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-.contact-info a:active {
-    color: var(--secondary-color);
-    background-color: transparent;
-    text-decoration: underline;
 }
 /* end "contact info" style */
