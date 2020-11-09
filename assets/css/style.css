@@ -94,63 +94,106 @@ header nav ul li a {
 .section-title {
     font-size: 30px;
     color: var(--primary-color);
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
-    position: fixed;
 }
+
 
 /* add styles to the "about-me" section */
 .intro {
-    text-align: justify;
-    vertical-align: center;
+    display: flex;
+}
+
+.intro div h2 {
+    text-align: right;
+}
+
+.intro-wrapper {
+    border-left: 3px solid;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 50px;
 }
 
 .intro p {
-    line-height: 1.2;
-    color: var(--primary-color);
-    width: 80%;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding-left: 300px;
+    background: transparent;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 50px;
 }
+
 /* end "about-me" style */
 
 /* add style to "my work" section */
-
-.sample {
-    text-align: justify;
-    vertical-align: center;
-    width: 100%;
-    margin: 0 auto;
+.work {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    color: var(--primary-color)
-    text-decoration: none;
 }
 
-.work-sample {
-    width: 300px;
-    color: var(--primary-color)
-    background-color: var(--secondary-color)
-    padding: 50px;
-    margin: 20px;
+.work div h2 {
+    text-align: right;
+}
+
+.work-wrapper {
+    border-left: 3px solid;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* add style to grid */
+.work-grid-container {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.work-grid-item {
+    background-color: var(--secondary-color);
+    border: solid;
+    padding: 1em;
+    color: var(--primary-color);
 }
 /* end "my work" style */
 
 /* add style to "contact me" section */
-.contact {
-    text-align: justify;
-    vertical-align: center;
+.contact-wrapper {
+    border-left: 3px solid;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
-.contact-info {
+.contact {
     display: flex;
-    text-align: justify;
-    vertical-align: center;
 }
+
+.contact div h2 {
+    text-align: right;
+}
+ 
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one {
+    flex: 1;
+}
+
+.two {
+    flex: 1;
+}
+
+.three {
+    flex: 1;
+}
+
+.four {
+    flex: 1;
+}
+
 .contact-info a:link {
     color: var(--primary-color);
     background-color: transparent;
