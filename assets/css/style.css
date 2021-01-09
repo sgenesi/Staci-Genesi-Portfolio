@@ -45,6 +45,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -91,11 +92,13 @@ header nav ul li a {
     background-image: url("../images/hero.png");
     height: 250px;
     background-size: cover;
-    background-position: center;
     position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: -1;
 }
 
 .hero h3{
@@ -110,6 +113,7 @@ header nav ul li a {
     right: 0px;
 }
 /* end hero style */
+
 .section-title {
     font-size: 30px;
     color: var(--primary-color);
@@ -157,54 +161,120 @@ header nav ul li a {
     margin-right: 48px;
 }
 
-.box {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    align-content: space-around;
-    width: 1000px;
-    margin: 0 auto;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin-left: 2%;
+  }
+  
+  .grid-container > div {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .box-1 {
+      background-image: url("../images/run-buddy.png");
+      border: 5px solid var(--primary-color);
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .container-1 {
+      color: whitesmoke; 
+      background-color: var(--tertiary-color);
+  }
+
+  .box-2 {
+    background-image: url("../images/password-generator.png");
+    border: 5px solid var(--primary-color);
+    background-size: cover;
+    background-position: center;
 }
 
-.flex-child {
-    width: 320px;
-    height: 280px;
-    margin: 6px;
-    position: relative;
-}
-
-.flex-child h3 h4 {
-    position: absolute;
-    display: block;
-    left: 10px;
-    bottom: 0;
-    color: var(--primary-color);
-}
-
-.flex1 {
-    width: 300px;
-    height: 300px;
-    border: 2px solid var(--secondary-color);
-    color: var(--primary-color);
-    resize: both;
-    overflow: scroll;
-    position: relative;
+.container-2 {
+    color: whitesmoke; 
     background-color: var(--tertiary-color);
 }
 
-.flex2, .flex3, .flex4, .flex5, .flex6 {
-    background-image: url("../images/placeholder.png");
+.box-3 {
+    background-image: url("../images/workday-scheduler.png");
+    border: 5px solid var(--primary-color);
     background-size: cover;
-    width: 225px;
-    height: 225px;
-    border: 2px solid var(--secondary-color);
-    color: var(--primary-color);
-    resize: both;
-    overflow: scroll;
-    position: relative;
+    background-position: center;
 }
+
+.container-3 {
+    color: whitesmoke; 
+    background-color: var(--tertiary-color);
+}
+
+.box-4 {
+    background-image: url("../images/weather-dashboard.png");
+    border: 5px solid var(--primary-color);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-4 {
+    color: whitesmoke; 
+    background-color: var(--tertiary-color);
+}
+
+.box-5 {
+    background-image: url("../images/placeholder.png");
+    border: 5px solid var(--primary-color);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-5 {
+    color: whitesmoke; 
+    background-color: var(--tertiary-color);
+}
+
+.box-6 {
+    background-image: url("../images/placeholder.png");
+    border: 5px solid var(--primary-color);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-6 {
+    color: whitesmoke; 
+    background-color: var(--tertiary-color);
+}
+
+.box-7 {
+    background-image: url("../images/placeholder.png");
+    border: 5px solid var(--primary-color);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-7 {
+    color: whitesmoke; 
+    background-color: var(--tertiary-color);
+}
+
+.box-8 {
+    background-image: url("../images/placeholder.png");
+    border: 5px solid var(--primary-color);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-8 {
+    color: whitesmoke; 
+    background-color: var(--tertiary-color);
+}
+
 /* end "my work" style */
 
 /* add style to "contact me" section */
@@ -232,7 +302,23 @@ header nav ul li a {
  
 .box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.one {
+    margin-left: 45%;
+}
+
+.two {
+    margin-left: 10%;
+}
+
+.three {
+    margin-left: 10%;
+}
+
+.four {
+    margin-left: 10%;
 }
 /* end "contact info" style */
 
