@@ -1,7 +1,24 @@
 .hero-body h1 {
     font-size: 4rem !important; /* overrode BULMA defualt header size */
+    color: white !important;
 }
 
 .hero-body .container {
     margin: .25rem;
+}
+
+.hero {
+    background: #f865a2 !important;
+}
+
+.title {
+color: #0c1454 !important;
+}
+
+.work {
+    background-color: #a156b9 !important;
+}
+
+.subtitle {
+    color: #155ca9 !important;
 }
