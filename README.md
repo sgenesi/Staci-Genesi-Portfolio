@@ -10,7 +10,7 @@ An online portfolio to showcase my skills and work as a web developer.
 
 ---
 ## Website
-https://sgenesi.github.io/Staci-Genesi-Portfolio-challenge/
+https://sgenesi.github.io/Staci-Genesi-Portfolio/
 
 ---
 ## Screen Shots
